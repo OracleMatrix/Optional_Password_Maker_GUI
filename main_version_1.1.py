@@ -1,7 +1,6 @@
 from customtkinter import *
 from tkinter import messagebox
 import random
-from example import *
 
 root = CTk()
 root.title('Strong Password Generator App v-1.1')
