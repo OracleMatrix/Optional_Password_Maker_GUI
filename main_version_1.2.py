@@ -228,18 +228,18 @@ def check_pass_power():
 
 
         elif data.isdigit():
-            result_label.configure(top, text="Weak : \nPassword should not be only numbers.", text_color="yellow",
+            result_label.configure(top, text="Weak : \nPassword should not be only numbers.", text_color="orange",
                                    font=('Century Gothic', 15))
 
         elif not any(char.isupper() for char in data):
             result_label.configure(top,
                                    text="Medium : \nit could be at least with one uppercase letter or special character.",
-                                   text_color="yellow", font=('Century Gothic', 11))
+                                   text_color="orange", font=('Century Gothic', 11))
 
         elif not any(char.islower() for char in data):
             result_label.configure(top,
                                    text="Medium : \nit could be at least with one lowercase letter or special character",
-                                   text_color="yellow", font=("Century Gothic", 11))
+                                   text_color="orange", font=("Century Gothic", 11))
 
         elif not any(char in special_letters for char in data):
             result_label.configure(top, text="strong : \nPassword is good but could be better with special character.",
